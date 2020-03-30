@@ -1,0 +1,1325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import sample.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="628.0" prefWidth="563.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Controller_16x16">
+   <children>
+      <MenuBar prefHeight="27.0" prefWidth="500.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="lblBombs" layoutX="95.0" layoutY="35.0" text="Количесвто бомб:">
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <Label fx:id="lblTime" layoutX="369.0" layoutY="35.0" text="Время: 00:00">
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <Cell fx:id="cell0_0" fitHeight="35.0" fitWidth="35.0" layoutY="67.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell0_1" fitHeight="35.0" fitWidth="35.0" layoutX="35.0" layoutY="67.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell0_2" fitHeight="35.0" fitWidth="35.0" layoutX="70.0" layoutY="67.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell0_3" fitHeight="35.0" fitWidth="35.0" layoutX="105.0" layoutY="67.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell0_4" fitHeight="35.0" fitWidth="35.0" layoutX="140.0" layoutY="67.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell0_5" fitHeight="35.0" fitWidth="35.0" layoutX="175.0" layoutY="67.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell0_6" fitHeight="35.0" fitWidth="35.0" layoutX="210.0" layoutY="67.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell0_7" fitHeight="35.0" fitWidth="35.0" layoutX="245.0" layoutY="67.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell0_8" fitHeight="35.0" fitWidth="35.0" layoutX="280.0" layoutY="67.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell0_9" fitHeight="35.0" fitWidth="35.0" layoutX="315.0" layoutY="67.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell0_10" fitHeight="35.0" fitWidth="35.0" layoutX="350.0" layoutY="67.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell0_11" fitHeight="35.0" fitWidth="35.0" layoutX="385.0" layoutY="67.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell0_12" fitHeight="35.0" fitWidth="35.0" layoutX="420.0" layoutY="67.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell0_13" fitHeight="35.0" fitWidth="35.0" layoutX="455.0" layoutY="67.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell0_14" fitHeight="35.0" fitWidth="35.0" layoutX="490.0" layoutY="67.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell0_15" fitHeight="35.0" fitWidth="35.0" layoutX="525.0" layoutY="67.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell1_0" fitHeight="35.0" fitWidth="35.0" layoutY="102.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell1_1" fitHeight="35.0" fitWidth="35.0" layoutX="35.0" layoutY="102.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell1_2" fitHeight="35.0" fitWidth="35.0" layoutX="70.0" layoutY="102.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell1_3" fitHeight="35.0" fitWidth="35.0" layoutX="105.0" layoutY="102.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell1_4" fitHeight="35.0" fitWidth="35.0" layoutX="140.0" layoutY="102.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell1_5" fitHeight="35.0" fitWidth="35.0" layoutX="175.0" layoutY="102.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell1_6" fitHeight="35.0" fitWidth="35.0" layoutX="210.0" layoutY="102.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell1_7" fitHeight="35.0" fitWidth="35.0" layoutX="245.0" layoutY="102.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell1_8" fitHeight="35.0" fitWidth="35.0" layoutX="280.0" layoutY="102.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell1_9" fitHeight="35.0" fitWidth="35.0" layoutX="315.0" layoutY="102.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell1_10" fitHeight="35.0" fitWidth="35.0" layoutX="350.0" layoutY="102.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell1_11" fitHeight="35.0" fitWidth="35.0" layoutX="385.0" layoutY="102.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell1_12" fitHeight="35.0" fitWidth="35.0" layoutX="420.0" layoutY="102.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell1_13" fitHeight="35.0" fitWidth="35.0" layoutX="455.0" layoutY="102.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell1_14" fitHeight="35.0" fitWidth="35.0" layoutX="490.0" layoutY="102.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell1_15" fitHeight="35.0" fitWidth="35.0" layoutX="525.0" layoutY="102.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell2_0" fitHeight="35.0" fitWidth="35.0" layoutY="137.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell2_1" fitHeight="35.0" fitWidth="35.0" layoutX="35.0" layoutY="137.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell2_2" fitHeight="35.0" fitWidth="35.0" layoutX="70.0" layoutY="137.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell2_3" fitHeight="35.0" fitWidth="35.0" layoutX="105.0" layoutY="137.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell2_4" fitHeight="35.0" fitWidth="35.0" layoutX="140.0" layoutY="137.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell2_5" fitHeight="35.0" fitWidth="35.0" layoutX="175.0" layoutY="137.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell2_6" fitHeight="35.0" fitWidth="35.0" layoutX="210.0" layoutY="137.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell2_7" fitHeight="35.0" fitWidth="35.0" layoutX="245.0" layoutY="137.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell2_8" fitHeight="35.0" fitWidth="35.0" layoutX="280.0" layoutY="137.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell2_9" fitHeight="35.0" fitWidth="35.0" layoutX="315.0" layoutY="137.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell2_10" fitHeight="35.0" fitWidth="35.0" layoutX="350.0" layoutY="137.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell2_11" fitHeight="35.0" fitWidth="35.0" layoutX="385.0" layoutY="137.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell2_12" fitHeight="35.0" fitWidth="35.0" layoutX="420.0" layoutY="137.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell2_13" fitHeight="35.0" fitWidth="35.0" layoutX="455.0" layoutY="137.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell2_14" fitHeight="35.0" fitWidth="35.0" layoutX="490.0" layoutY="137.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell2_15" fitHeight="35.0" fitWidth="35.0" layoutX="525.0" layoutY="137.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell3_0" fitHeight="35.0" fitWidth="35.0" layoutY="172.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell3_1" fitHeight="35.0" fitWidth="35.0" layoutX="35.0" layoutY="172.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell3_2" fitHeight="35.0" fitWidth="35.0" layoutX="70.0" layoutY="172.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell3_3" fitHeight="35.0" fitWidth="35.0" layoutX="105.0" layoutY="172.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell3_4" fitHeight="35.0" fitWidth="35.0" layoutX="140.0" layoutY="172.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell3_5" fitHeight="35.0" fitWidth="35.0" layoutX="175.0" layoutY="172.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell3_6" fitHeight="35.0" fitWidth="35.0" layoutX="210.0" layoutY="172.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell3_7" fitHeight="35.0" fitWidth="35.0" layoutX="245.0" layoutY="172.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell3_8" fitHeight="35.0" fitWidth="35.0" layoutX="280.0" layoutY="172.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell3_9" fitHeight="35.0" fitWidth="35.0" layoutX="315.0" layoutY="172.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell3_10" fitHeight="35.0" fitWidth="35.0" layoutX="350.0" layoutY="172.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell3_11" fitHeight="35.0" fitWidth="35.0" layoutX="385.0" layoutY="172.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell3_12" fitHeight="35.0" fitWidth="35.0" layoutX="420.0" layoutY="172.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell3_13" fitHeight="35.0" fitWidth="35.0" layoutX="455.0" layoutY="172.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell3_14" fitHeight="35.0" fitWidth="35.0" layoutX="490.0" layoutY="172.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell3_15" fitHeight="35.0" fitWidth="35.0" layoutX="525.0" layoutY="172.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell4_0" fitHeight="35.0" fitWidth="35.0" layoutY="207.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell4_1" fitHeight="35.0" fitWidth="35.0" layoutX="35.0" layoutY="207.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell4_2" fitHeight="35.0" fitWidth="35.0" layoutX="70.0" layoutY="207.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell4_3" fitHeight="35.0" fitWidth="35.0" layoutX="105.0" layoutY="207.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell4_4" fitHeight="35.0" fitWidth="35.0" layoutX="140.0" layoutY="207.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell4_5" fitHeight="35.0" fitWidth="35.0" layoutX="175.0" layoutY="207.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell4_6" fitHeight="35.0" fitWidth="35.0" layoutX="210.0" layoutY="207.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell4_7" fitHeight="35.0" fitWidth="35.0" layoutX="245.0" layoutY="207.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell4_8" fitHeight="35.0" fitWidth="35.0" layoutX="280.0" layoutY="207.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell4_9" fitHeight="35.0" fitWidth="35.0" layoutX="315.0" layoutY="207.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell4_10" fitHeight="35.0" fitWidth="35.0" layoutX="350.0" layoutY="207.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell4_11" fitHeight="35.0" fitWidth="35.0" layoutX="385.0" layoutY="207.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell4_12" fitHeight="35.0" fitWidth="35.0" layoutX="420.0" layoutY="207.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell4_13" fitHeight="35.0" fitWidth="35.0" layoutX="455.0" layoutY="207.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell4_14" fitHeight="35.0" fitWidth="35.0" layoutX="490.0" layoutY="207.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell4_15" fitHeight="35.0" fitWidth="35.0" layoutX="525.0" layoutY="207.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell5_0" fitHeight="35.0" fitWidth="35.0" layoutY="242.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell5_1" fitHeight="35.0" fitWidth="35.0" layoutX="35.0" layoutY="242.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell5_2" fitHeight="35.0" fitWidth="35.0" layoutX="70.0" layoutY="242.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell5_3" fitHeight="35.0" fitWidth="35.0" layoutX="105.0" layoutY="242.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell5_4" fitHeight="35.0" fitWidth="35.0" layoutX="140.0" layoutY="242.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell5_5" fitHeight="35.0" fitWidth="35.0" layoutX="175.0" layoutY="242.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell5_6" fitHeight="35.0" fitWidth="35.0" layoutX="210.0" layoutY="242.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell5_7" fitHeight="35.0" fitWidth="35.0" layoutX="245.0" layoutY="242.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell5_8" fitHeight="35.0" fitWidth="35.0" layoutX="280.0" layoutY="242.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell5_9" fitHeight="35.0" fitWidth="35.0" layoutX="315.0" layoutY="242.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell5_10" fitHeight="35.0" fitWidth="35.0" layoutX="350.0" layoutY="242.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell5_11" fitHeight="35.0" fitWidth="35.0" layoutX="385.0" layoutY="242.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell5_12" fitHeight="35.0" fitWidth="35.0" layoutX="420.0" layoutY="242.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell5_13" fitHeight="35.0" fitWidth="35.0" layoutX="455.0" layoutY="242.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell5_14" fitHeight="35.0" fitWidth="35.0" layoutX="490.0" layoutY="242.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell5_15" fitHeight="35.0" fitWidth="35.0" layoutX="525.0" layoutY="242.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell6_0" fitHeight="35.0" fitWidth="35.0" layoutY="277.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell6_1" fitHeight="35.0" fitWidth="35.0" layoutX="35.0" layoutY="277.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell6_2" fitHeight="35.0" fitWidth="35.0" layoutX="70.0" layoutY="277.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell6_3" fitHeight="35.0" fitWidth="35.0" layoutX="105.0" layoutY="277.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell6_4" fitHeight="35.0" fitWidth="35.0" layoutX="140.0" layoutY="277.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell6_5" fitHeight="35.0" fitWidth="35.0" layoutX="175.0" layoutY="277.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell6_6" fitHeight="35.0" fitWidth="35.0" layoutX="210.0" layoutY="277.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell6_7" fitHeight="35.0" fitWidth="35.0" layoutX="245.0" layoutY="277.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell6_8" fitHeight="35.0" fitWidth="35.0" layoutX="280.0" layoutY="277.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell6_9" fitHeight="35.0" fitWidth="35.0" layoutX="315.0" layoutY="277.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell6_10" fitHeight="35.0" fitWidth="35.0" layoutX="350.0" layoutY="277.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell6_11" fitHeight="35.0" fitWidth="35.0" layoutX="385.0" layoutY="277.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell6_12" fitHeight="35.0" fitWidth="35.0" layoutX="420.0" layoutY="277.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell6_13" fitHeight="35.0" fitWidth="35.0" layoutX="455.0" layoutY="277.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell6_14" fitHeight="35.0" fitWidth="35.0" layoutX="490.0" layoutY="277.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell6_15" fitHeight="35.0" fitWidth="35.0" layoutX="525.0" layoutY="277.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell7_0" fitHeight="35.0" fitWidth="35.0" layoutY="312.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell7_1" fitHeight="35.0" fitWidth="35.0" layoutX="35.0" layoutY="312.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell7_2" fitHeight="35.0" fitWidth="35.0" layoutX="70.0" layoutY="312.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell7_3" fitHeight="35.0" fitWidth="35.0" layoutX="105.0" layoutY="312.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell7_4" fitHeight="35.0" fitWidth="35.0" layoutX="140.0" layoutY="312.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell7_5" fitHeight="35.0" fitWidth="35.0" layoutX="175.0" layoutY="312.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell7_6" fitHeight="35.0" fitWidth="35.0" layoutX="210.0" layoutY="312.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell7_7" fitHeight="35.0" fitWidth="35.0" layoutX="245.0" layoutY="312.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell7_8" fitHeight="35.0" fitWidth="35.0" layoutX="280.0" layoutY="312.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell7_9" fitHeight="35.0" fitWidth="35.0" layoutX="315.0" layoutY="312.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell7_10" fitHeight="35.0" fitWidth="35.0" layoutX="350.0" layoutY="312.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell7_11" fitHeight="35.0" fitWidth="35.0" layoutX="385.0" layoutY="312.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell7_12" fitHeight="35.0" fitWidth="35.0" layoutX="420.0" layoutY="312.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell7_13" fitHeight="35.0" fitWidth="35.0" layoutX="455.0" layoutY="312.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell7_14" fitHeight="35.0" fitWidth="35.0" layoutX="490.0" layoutY="312.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell7_15" fitHeight="35.0" fitWidth="35.0" layoutX="525.0" layoutY="312.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell8_0" fitHeight="35.0" fitWidth="35.0" layoutY="347.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell8_1" fitHeight="35.0" fitWidth="35.0" layoutX="35.0" layoutY="347.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell8_2" fitHeight="35.0" fitWidth="35.0" layoutX="70.0" layoutY="347.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell8_3" fitHeight="35.0" fitWidth="35.0" layoutX="105.0" layoutY="347.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell8_4" fitHeight="35.0" fitWidth="35.0" layoutX="140.0" layoutY="347.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell8_5" fitHeight="35.0" fitWidth="35.0" layoutX="175.0" layoutY="347.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell8_6" fitHeight="35.0" fitWidth="35.0" layoutX="210.0" layoutY="347.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell8_7" fitHeight="35.0" fitWidth="35.0" layoutX="245.0" layoutY="347.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell8_8" fitHeight="35.0" fitWidth="35.0" layoutX="280.0" layoutY="347.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell8_9" fitHeight="35.0" fitWidth="35.0" layoutX="315.0" layoutY="347.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell8_10" fitHeight="35.0" fitWidth="35.0" layoutX="350.0" layoutY="347.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell8_11" fitHeight="35.0" fitWidth="35.0" layoutX="385.0" layoutY="347.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell8_12" fitHeight="35.0" fitWidth="35.0" layoutX="420.0" layoutY="347.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell8_13" fitHeight="35.0" fitWidth="35.0" layoutX="455.0" layoutY="347.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell8_14" fitHeight="35.0" fitWidth="35.0" layoutX="490.0" layoutY="347.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell8_15" fitHeight="35.0" fitWidth="35.0" layoutX="525.0" layoutY="347.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell9_0" fitHeight="35.0" fitWidth="35.0" layoutY="382.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell9_1" fitHeight="35.0" fitWidth="35.0" layoutX="35.0" layoutY="382.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell9_2" fitHeight="35.0" fitWidth="35.0" layoutX="70.0" layoutY="382.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell9_3" fitHeight="35.0" fitWidth="35.0" layoutX="105.0" layoutY="382.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell9_4" fitHeight="35.0" fitWidth="35.0" layoutX="140.0" layoutY="382.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell9_5" fitHeight="35.0" fitWidth="35.0" layoutX="175.0" layoutY="382.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell9_6" fitHeight="35.0" fitWidth="35.0" layoutX="210.0" layoutY="382.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell9_7" fitHeight="35.0" fitWidth="35.0" layoutX="245.0" layoutY="382.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell9_8" fitHeight="35.0" fitWidth="35.0" layoutX="280.0" layoutY="382.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell9_9" fitHeight="35.0" fitWidth="35.0" layoutX="315.0" layoutY="382.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell9_10" fitHeight="35.0" fitWidth="35.0" layoutX="350.0" layoutY="382.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell9_11" fitHeight="35.0" fitWidth="35.0" layoutX="385.0" layoutY="382.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell9_12" fitHeight="35.0" fitWidth="35.0" layoutX="420.0" layoutY="382.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell9_13" fitHeight="35.0" fitWidth="35.0" layoutX="455.0" layoutY="382.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell9_14" fitHeight="35.0" fitWidth="35.0" layoutX="490.0" layoutY="382.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell9_15" fitHeight="35.0" fitWidth="35.0" layoutX="525.0" layoutY="382.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell10_0" fitHeight="35.0" fitWidth="35.0" layoutY="417.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell10_1" fitHeight="35.0" fitWidth="35.0" layoutX="35.0" layoutY="417.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell10_2" fitHeight="35.0" fitWidth="35.0" layoutX="70.0" layoutY="417.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell10_3" fitHeight="35.0" fitWidth="35.0" layoutX="105.0" layoutY="417.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell10_4" fitHeight="35.0" fitWidth="35.0" layoutX="140.0" layoutY="417.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell10_5" fitHeight="35.0" fitWidth="35.0" layoutX="175.0" layoutY="417.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell10_6" fitHeight="35.0" fitWidth="35.0" layoutX="210.0" layoutY="417.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell10_7" fitHeight="35.0" fitWidth="35.0" layoutX="245.0" layoutY="417.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell10_8" fitHeight="35.0" fitWidth="35.0" layoutX="280.0" layoutY="417.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell10_9" fitHeight="35.0" fitWidth="35.0" layoutX="315.0" layoutY="417.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell10_10" fitHeight="35.0" fitWidth="35.0" layoutX="350.0" layoutY="417.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell10_11" fitHeight="35.0" fitWidth="35.0" layoutX="385.0" layoutY="417.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell10_12" fitHeight="35.0" fitWidth="35.0" layoutX="420.0" layoutY="417.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell10_13" fitHeight="35.0" fitWidth="35.0" layoutX="455.0" layoutY="417.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell10_14" fitHeight="35.0" fitWidth="35.0" layoutX="490.0" layoutY="417.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell10_15" fitHeight="35.0" fitWidth="35.0" layoutX="525.0" layoutY="417.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell11_0" fitHeight="35.0" fitWidth="35.0" layoutY="452.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell11_1" fitHeight="35.0" fitWidth="35.0" layoutX="35.0" layoutY="452.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell11_2" fitHeight="35.0" fitWidth="35.0" layoutX="70.0" layoutY="452.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell11_3" fitHeight="35.0" fitWidth="35.0" layoutX="105.0" layoutY="452.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell11_4" fitHeight="35.0" fitWidth="35.0" layoutX="140.0" layoutY="452.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell11_5" fitHeight="35.0" fitWidth="35.0" layoutX="175.0" layoutY="452.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell11_6" fitHeight="35.0" fitWidth="35.0" layoutX="210.0" layoutY="452.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell11_7" fitHeight="35.0" fitWidth="35.0" layoutX="245.0" layoutY="452.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell11_8" fitHeight="35.0" fitWidth="35.0" layoutX="280.0" layoutY="452.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell11_9" fitHeight="35.0" fitWidth="35.0" layoutX="315.0" layoutY="452.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell11_10" fitHeight="35.0" fitWidth="35.0" layoutX="350.0" layoutY="452.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell11_11" fitHeight="35.0" fitWidth="35.0" layoutX="385.0" layoutY="452.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell11_12" fitHeight="35.0" fitWidth="35.0" layoutX="420.0" layoutY="452.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell11_13" fitHeight="35.0" fitWidth="35.0" layoutX="455.0" layoutY="452.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell11_14" fitHeight="35.0" fitWidth="35.0" layoutX="490.0" layoutY="452.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell11_15" fitHeight="35.0" fitWidth="35.0" layoutX="525.0" layoutY="452.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell12_0" fitHeight="35.0" fitWidth="35.0" layoutY="487.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell12_1" fitHeight="35.0" fitWidth="35.0" layoutX="35.0" layoutY="487.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell12_2" fitHeight="35.0" fitWidth="35.0" layoutX="70.0" layoutY="487.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell12_3" fitHeight="35.0" fitWidth="35.0" layoutX="105.0" layoutY="487.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell12_4" fitHeight="35.0" fitWidth="35.0" layoutX="140.0" layoutY="487.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell12_5" fitHeight="35.0" fitWidth="35.0" layoutX="175.0" layoutY="487.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell12_6" fitHeight="35.0" fitWidth="35.0" layoutX="210.0" layoutY="487.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell12_7" fitHeight="35.0" fitWidth="35.0" layoutX="245.0" layoutY="487.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell12_8" fitHeight="35.0" fitWidth="35.0" layoutX="280.0" layoutY="487.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell12_9" fitHeight="35.0" fitWidth="35.0" layoutX="315.0" layoutY="487.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell12_10" fitHeight="35.0" fitWidth="35.0" layoutX="350.0" layoutY="487.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell12_11" fitHeight="35.0" fitWidth="35.0" layoutX="385.0" layoutY="487.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell12_12" fitHeight="35.0" fitWidth="35.0" layoutX="420.0" layoutY="487.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell12_13" fitHeight="35.0" fitWidth="35.0" layoutX="455.0" layoutY="487.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell12_14" fitHeight="35.0" fitWidth="35.0" layoutX="490.0" layoutY="487.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell12_15" fitHeight="35.0" fitWidth="35.0" layoutX="525.0" layoutY="487.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell13_0" fitHeight="35.0" fitWidth="35.0" layoutY="522.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell13_1" fitHeight="35.0" fitWidth="35.0" layoutX="35.0" layoutY="522.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell13_2" fitHeight="35.0" fitWidth="35.0" layoutX="70.0" layoutY="522.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell13_3" fitHeight="35.0" fitWidth="35.0" layoutX="105.0" layoutY="522.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell13_4" fitHeight="35.0" fitWidth="35.0" layoutX="140.0" layoutY="522.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell13_5" fitHeight="35.0" fitWidth="35.0" layoutX="175.0" layoutY="522.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell13_6" fitHeight="35.0" fitWidth="35.0" layoutX="210.0" layoutY="522.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell13_7" fitHeight="35.0" fitWidth="35.0" layoutX="245.0" layoutY="522.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell13_8" fitHeight="35.0" fitWidth="35.0" layoutX="280.0" layoutY="522.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell13_9" fitHeight="35.0" fitWidth="35.0" layoutX="315.0" layoutY="522.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell13_10" fitHeight="35.0" fitWidth="35.0" layoutX="350.0" layoutY="522.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell13_11" fitHeight="35.0" fitWidth="35.0" layoutX="385.0" layoutY="522.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell13_12" fitHeight="35.0" fitWidth="35.0" layoutX="420.0" layoutY="522.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell13_13" fitHeight="35.0" fitWidth="35.0" layoutX="455.0" layoutY="522.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell13_14" fitHeight="35.0" fitWidth="35.0" layoutX="490.0" layoutY="522.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell13_15" fitHeight="35.0" fitWidth="35.0" layoutX="525.0" layoutY="522.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell14_0" fitHeight="35.0" fitWidth="35.0" layoutY="557.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell14_1" fitHeight="35.0" fitWidth="35.0" layoutX="35.0" layoutY="557.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell14_2" fitHeight="35.0" fitWidth="35.0" layoutX="70.0" layoutY="557.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell14_3" fitHeight="35.0" fitWidth="35.0" layoutX="105.0" layoutY="557.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell14_4" fitHeight="35.0" fitWidth="35.0" layoutX="140.0" layoutY="557.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell14_5" fitHeight="35.0" fitWidth="35.0" layoutX="175.0" layoutY="557.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell14_6" fitHeight="35.0" fitWidth="35.0" layoutX="210.0" layoutY="557.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell14_7" fitHeight="35.0" fitWidth="35.0" layoutX="245.0" layoutY="557.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell14_8" fitHeight="35.0" fitWidth="35.0" layoutX="280.0" layoutY="557.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell14_9" fitHeight="35.0" fitWidth="35.0" layoutX="315.0" layoutY="557.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell14_10" fitHeight="35.0" fitWidth="35.0" layoutX="350.0" layoutY="557.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell14_11" fitHeight="35.0" fitWidth="35.0" layoutX="385.0" layoutY="557.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell14_12" fitHeight="35.0" fitWidth="35.0" layoutX="420.0" layoutY="557.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell14_13" fitHeight="35.0" fitWidth="35.0" layoutX="455.0" layoutY="557.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell14_14" fitHeight="35.0" fitWidth="35.0" layoutX="490.0" layoutY="557.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell14_15" fitHeight="35.0" fitWidth="35.0" layoutX="525.0" layoutY="557.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell15_0" fitHeight="35.0" fitWidth="35.0" layoutY="592.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell15_1" fitHeight="35.0" fitWidth="35.0" layoutX="35.0" layoutY="592.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell15_2" fitHeight="35.0" fitWidth="35.0" layoutX="70.0" layoutY="592.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell15_3" fitHeight="35.0" fitWidth="35.0" layoutX="105.0" layoutY="592.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell15_4" fitHeight="35.0" fitWidth="35.0" layoutX="140.0" layoutY="592.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell15_5" fitHeight="35.0" fitWidth="35.0" layoutX="175.0" layoutY="592.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell15_6" fitHeight="35.0" fitWidth="35.0" layoutX="210.0" layoutY="592.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell15_7" fitHeight="35.0" fitWidth="35.0" layoutX="245.0" layoutY="592.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell15_8" fitHeight="35.0" fitWidth="35.0" layoutX="280.0" layoutY="592.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell15_9" fitHeight="35.0" fitWidth="35.0" layoutX="315.0" layoutY="592.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell15_10" fitHeight="35.0" fitWidth="35.0" layoutX="350.0" layoutY="592.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell15_11" fitHeight="35.0" fitWidth="35.0" layoutX="385.0" layoutY="592.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell15_12" fitHeight="35.0" fitWidth="35.0" layoutX="420.0" layoutY="592.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell15_13" fitHeight="35.0" fitWidth="35.0" layoutX="455.0" layoutY="592.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell15_14" fitHeight="35.0" fitWidth="35.0" layoutX="490.0" layoutY="592.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+      <Cell fx:id="cell15_15" fitHeight="35.0" fitWidth="35.0" layoutX="525.0" layoutY="592.0" onMouseClicked="#clickedAction">
+         <image>
+            <Image url="@../img/closed.png" />
+         </image>
+      </Cell>
+   </children>
+</AnchorPane>
