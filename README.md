@@ -1,2 +1,2 @@
-# Minesweeper_by_MI
- 
+# Game Minesweeper
+Implementation of the game "Minesweeper" 
