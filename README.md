@@ -10,7 +10,7 @@
 
 ---
 Game [Minesweeper](https://en.wikipedia.org/wiki/Minesweeper_(video_game)), which is implemented as a desktop application.</br>
-Realisation by [Java 8](https://www.oracle.com/ru/java/technologies/javase/javase8-archive-downloads.html).
+Realisation by [Java 8](https://www.oracle.com/ru/java/technologies/javase/javase8-archive-downloads.html).</br>
 [JavaFX](https://openjfx.io/) was used to create a GUI.
 
 <a id="anc1"></a>
