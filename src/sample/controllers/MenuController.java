@@ -26,7 +26,7 @@ public class MenuController {
             stage_8x8 = new Stage();
             stage_8x8.setTitle("Minesweeper");
             stage_8x8.getIcons().add(new Image("sample/img/icon.png"));
-            stage_8x8.setScene(new Scene(root, 398, 486));
+            stage_8x8.setScene(new Scene(root, 409, 497));
             stage_8x8.setResizable(false);
             stage_8x8.setOnCloseRequest(new EventHandler<WindowEvent>() {
                 @Override
@@ -52,7 +52,7 @@ public class MenuController {
             stage_16x16 = new Stage();
             stage_16x16.setTitle("Minesweeper");
             stage_16x16.getIcons().add(new Image("sample/img/icon.png"));
-            stage_16x16.setScene(new Scene(root, 550, 616));
+            stage_16x16.setScene(new Scene(root, 561, 627));
             stage_16x16.setResizable(false);
             stage_16x16.setOnCloseRequest(new EventHandler<WindowEvent>() {
                 @Override
