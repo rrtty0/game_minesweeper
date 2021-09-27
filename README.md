@@ -40,6 +40,8 @@ Realisation by [Java 8](https://www.oracle.com/ru/java/technologies/javase/javas
 2. _Make changes_ and _test_
 3. _Submit Pull Request_ with comprehensive description of changes
 
+<a id="anc4"></a>
+
 ## Example of work
 
 Application have two modes of game:
